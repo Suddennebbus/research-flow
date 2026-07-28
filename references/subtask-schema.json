@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Suddennebbus/research-flow/subtask-schema.json",
+  "title": "Research Subtask",
+  "description": "research-flow Step 2 生成的单个子任务定义。每个子任务是一个独立可研究的方向。",
+  "type": "object",
+  "required": ["id", "title", "objective", "searchQueries", "expectedSources", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^t[0-9]+$",
+      "description": "子任务唯一标识，格式 t1, t2, t3 ...",
+      "examples": ["t1", "t2"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "子任务标题，一句话，简洁有信息量"
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 500,
+      "description": "研究目标，2-3 句话说明要搞清楚什么"
+    },
+    "searchQueries": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "英文搜索语句列表，用于 bibliography_agent 搜索输入"
+    },
+    "expectedSources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": ["official_docs", "community", "tech_blog", "academic", "general"]
+      },
+      "description": "预期信息源类型，对应中文：官方文档、社区、技术博客、学术、通用"
+    },
+    "status": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["pending", "executing", "done", "deleted"],
+          "description": "子任务执行状态"
+        }
+      }
+    }
+  }
+}
