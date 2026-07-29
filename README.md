@@ -131,7 +131,7 @@ git clone https://github.com/Suddennebbus/research-flow.git \
 
 ***
 
-## Features at a glance
+## 亮点
 
 - **结构化采访** — 两轮 AskUserQuestion，覆盖研究方向、目标读者、了解程度、特别关注，把模糊想法变成明确方向
 - **子任务卡片机制** — 3~6 个独立子任务，每个带搜索策略和预期信息源，逐卡确认（执行/删除/修改），修改讨论最多 2 轮
@@ -142,11 +142,28 @@ git clone https://github.com/Suddennebbus/research-flow.git \
 - **参考资料标注** — 上标引用 `[^1]` + 文末列表，数据有出处，观点可追溯
 - **只读区域保护** — `research/human-output/` 为只读区域，用户手写内容不会被 AI 覆写
 
+---
+
+## 项目结构
+
+```
+research-flow/
+├── SKILL.md                    ← 核心：7 步编排规范
+├── README.md                   ← 本文件
+├── LICENSE                     ← CC BY-NC 4.0
+├── CHANGELOG.md                ← 版本记录
+└── references/
+    ├── subtask-schema.json     ← 子任务 JSON Schema
+    ├── mermaid-color-scheme.md ← 图表配色规范
+    └── output-paths.md         ← 文件输出路径约定
+```
 
 
 ---
 
 ## 使用
+
+### 流程
 
 ```
 /research-flow                           → 启动完整 7 步工作流
@@ -174,33 +191,62 @@ research/
 
 详见 [references/output-paths.md](references/output-paths.md)
 
+### 使用体验示例
+
+### 1、布置任务
+
+安装好skill后，你可以让你的Claude Code自行判断要不要使用`research-flow`，更推荐的是通过斜杠指令呼出来，更精准，比如，
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=YWQzMzYwNzk4N2FlZTk0NjYwNjk1NDI4MGVmZWJhNjRfNG8xQmw3TU5PcGpBdGl1enNOdFRFcFlxenNBVG9Va09fVG9rZW46SnBVSGI3YmxHb2hsbjJ4bVh3cWNpMDl1bk9nXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+### 2、让AI采访你
+
+skill会根据任务情况拟几个问题问你，你们一起理清楚思路
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDVjYjE2MWQ4YTc3OTViNGQ2YzExNWUzNjg5NDM0OGZfSjRqOHQxZHZxYjdYS2I1VG5RQWdtNUVtRW1oT0FIRVhfVG9rZW46VDBYWmJuSFJXb25MNXF4RnZGWGNFR2hKblIyXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+### 3、基于采访内容生成子任务卡片，并逐项和你确认
+
+每个子任务都会让你确认一下，以确保方向没跑偏，**这一步非常有必要，人类要主导**
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=M2M5MGM2YWFkNzgwZjU4ODM2NWQ4ZDNjOTM3YzFiZTRfQjJWRXVjQ2tPQ21WQWhYNncza2kxWTJXbGFpbkFaWVFfVG9rZW46QWl2cmJjbDJRb1h5Wll4YTFDWGNISWk3bmNiXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+### 4、选研究模式，Quick/Full
+
+子任务全面确认完毕后，可以选一下研究模式，快速还是深入
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=Nzc4MWU3N2ZhYjM5NDJkN2YyNDJkZTIyZjhkOTM3ZWZfUm9NSDVZdG1RTlFjR1BWc29oZGFsRm1yVVUySW84UzFfVG9rZW46UXdTcWJ4UDNHb2Q0Y0t4Nmd4WmNhd2RibklnXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+我们选Quick模式示例一下
+
+### 5、会参考积攒的内容知识库
+
+**这里有一个亮点，大家可以看看，『内容知识库』，咱们这个技能可以积攒你自己的内容知识库，每次成果出来以后research-flow会自动把内容分段拆分为素材页面，供下次参考。**
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=NTMwYjBlMDliNGVmMWVjM2JiNmVmYmRiZjk3ZjNiNjZfUEFSdk54b3ZpUXlVMlpEc0VyVklLM3pLRzNkZ3MzUlFfVG9rZW46TzBDdGJhM202b08xQ0J4OWdYaGMxTjdHbm9FXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+### 6、风格重写
+
+需要注意的是，**风格重写无法代劳人类写作输出，重写仅提供参考！**
+
+可能没人喜欢看AI生成的内容，人味儿才是稀缺品
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=ODZkMjcyYjg2MTE5ZTc3NzhkNTI0ZWNkNjc5YWFhZWFfZm1YYm9Gbnl6SlVlY0phcXBCWjFxcFU3M00xYzU3OXdfVG9rZW46RDhwY2JHa0hOb0lkcmF4VHRkYmMwV1lrbmFiXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+这里我们选论文专业解读风格
+
+### 7、自动拆分更新你的内容知识库
+
+这是这个skill最终产物，包含研究计划、报告、风格重写文档、拆分后的内容知识库，每一项都能用在点上，
+
+**因为内容知识库的存在，你会越用越顺手，越用越懂你。**
+
+![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDczMTIwMTQ5YWI2YzVmNzM5NmQxMzEwZWY4NTcxM2VfWHpMU1lnWFJQU1JLVWVwWUx4cFV3blJhekpUaGd4eDlfVG9rZW46TFJQTmJvTWJGb0dqaXd4cEx3V2NuVEZwbldjXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+
+
 
 
 ---
-
-## Skill 详情
-
-### research-flow (v1.0.0)
-
-7 步编排 Skill。核心文件：[SKILL.md](SKILL.md)。技术参考：[references/](references/) — 子任务 JSON Schema、mermaid 配色规范、输出路径约定。
-
-**依赖**：[academic-research-skills](https://github.com/Imbad0202/academic-research-skills) 提供的 deep-research（13-agent 研究管道，v3.6.7+）。
-
----
-
-## 项目结构
-
-```
-research-flow/
-├── SKILL.md                    ← 核心：7 步编排规范
-├── README.md                   ← 本文件
-├── LICENSE                     ← CC BY-NC 4.0
-├── CHANGELOG.md                ← 版本记录
-└── references/
-    ├── subtask-schema.json     ← 子任务 JSON Schema
-    ├── mermaid-color-scheme.md ← 图表配色规范
-    └── output-paths.md         ← 文件输出路径约定
-```
 
 ## 兼容性
 
