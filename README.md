@@ -197,25 +197,25 @@ research/
 
 安装好skill后，你可以让你的Claude Code自行判断要不要使用`research-flow`，更推荐的是通过斜杠指令呼出来，更精准，比如，
 
-![1.布置任务](/home/admin/.claude/skill-repo/research-flow/docs/images/1.布置任务.png)
+![1.布置任务](docs/images/1.布置任务.png)
 
 ### 2、让AI采访你
 
 skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
-![2.让AI采访你](/home/admin/.claude/skill-repo/research-flow/docs/images/2.让AI采访你.png)
+![2.让AI采访你](docs/images/2.让AI采访你.png)
 
 ### 3、基于采访内容生成子任务卡片，并逐项和你确认
 
 每个子任务都会让你确认一下，以确保方向没跑偏，**这一步非常有必要，人类要主导**
 
-![3.基于采访内容生成子任务卡片，并逐项和你确认](/home/admin/.claude/skill-repo/research-flow/docs/images/3.基于采访内容生成子任务卡片，并逐项和你确认.png)
+![3.基于采访内容生成子任务卡片，并逐项和你确认](docs/images/3.基于采访内容生成子任务卡片，并逐项和你确认.png)
 
 ### 4、选研究模式，Quick/Full
 
 子任务全面确认完毕后，可以选一下研究模式，快速还是深入
 
-![4.选研究模式](/home/admin/.claude/skill-repo/research-flow/docs/images/4.选研究模式.png)
+![4.选研究模式](docs/images/4.选研究模式.png)
 
 我们选Quick模式示例一下
 
@@ -223,7 +223,7 @@ skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
 **这里有一个亮点，大家可以看看，『内容知识库』，咱们这个技能可以积攒你自己的内容知识库，每次成果出来以后research-flow会自动把内容分段拆分为素材页面，供下次参考。**
 
-![5.参考积攒的内容知识库](/home/admin/.claude/skill-repo/research-flow/docs/images/5.参考积攒的内容知识库.png)
+![5.参考积攒的内容知识库](docs/images/5.参考积攒的内容知识库.png)
 
 ### 6、风格重写
 
@@ -231,7 +231,7 @@ skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
 可能没人喜欢看AI生成的内容，人味儿才是稀缺品
 
-![6.风格重写](/home/admin/.claude/skill-repo/research-flow/docs/images/6.风格重写.png)
+![6.风格重写](docs/images/6.风格重写.png)
 
 这里我们选论文专业解读风格
 
@@ -241,7 +241,7 @@ skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
 **因为内容知识库的存在，你会越用越顺手，越用越懂你。**
 
-![7.自动拆分更新你的内容知识库](/home/admin/.claude/skill-repo/research-flow/docs/images/7.自动拆分更新你的内容知识库.png)
+![7.自动拆分更新你的内容知识库](docs/images/7.自动拆分更新你的内容知识库.png)
 
 
 
