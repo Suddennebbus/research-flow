@@ -197,25 +197,25 @@ research/
 
 安装好skill后，你可以让你的Claude Code自行判断要不要使用`research-flow`，更推荐的是通过斜杠指令呼出来，更精准，比如，
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=YWQzMzYwNzk4N2FlZTk0NjYwNjk1NDI4MGVmZWJhNjRfNG8xQmw3TU5PcGpBdGl1enNOdFRFcFlxenNBVG9Va09fVG9rZW46SnBVSGI3YmxHb2hsbjJ4bVh3cWNpMDl1bk9nXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![1.布置任务](/home/admin/.claude/skill-repo/research-flow/docs/images/1.布置任务.png)
 
 ### 2、让AI采访你
 
 skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDVjYjE2MWQ4YTc3OTViNGQ2YzExNWUzNjg5NDM0OGZfSjRqOHQxZHZxYjdYS2I1VG5RQWdtNUVtRW1oT0FIRVhfVG9rZW46VDBYWmJuSFJXb25MNXF4RnZGWGNFR2hKblIyXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![2.让AI采访你](/home/admin/.claude/skill-repo/research-flow/docs/images/2.让AI采访你.png)
 
 ### 3、基于采访内容生成子任务卡片，并逐项和你确认
 
 每个子任务都会让你确认一下，以确保方向没跑偏，**这一步非常有必要，人类要主导**
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=M2M5MGM2YWFkNzgwZjU4ODM2NWQ4ZDNjOTM3YzFiZTRfQjJWRXVjQ2tPQ21WQWhYNncza2kxWTJXbGFpbkFaWVFfVG9rZW46QWl2cmJjbDJRb1h5Wll4YTFDWGNISWk3bmNiXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![3.基于采访内容生成子任务卡片，并逐项和你确认](/home/admin/.claude/skill-repo/research-flow/docs/images/3.基于采访内容生成子任务卡片，并逐项和你确认.png)
 
 ### 4、选研究模式，Quick/Full
 
 子任务全面确认完毕后，可以选一下研究模式，快速还是深入
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=Nzc4MWU3N2ZhYjM5NDJkN2YyNDJkZTIyZjhkOTM3ZWZfUm9NSDVZdG1RTlFjR1BWc29oZGFsRm1yVVUySW84UzFfVG9rZW46UXdTcWJ4UDNHb2Q0Y0t4Nmd4WmNhd2RibklnXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![4.选研究模式](/home/admin/.claude/skill-repo/research-flow/docs/images/4.选研究模式.png)
 
 我们选Quick模式示例一下
 
@@ -223,7 +223,7 @@ skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
 **这里有一个亮点，大家可以看看，『内容知识库』，咱们这个技能可以积攒你自己的内容知识库，每次成果出来以后research-flow会自动把内容分段拆分为素材页面，供下次参考。**
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=NTMwYjBlMDliNGVmMWVjM2JiNmVmYmRiZjk3ZjNiNjZfUEFSdk54b3ZpUXlVMlpEc0VyVklLM3pLRzNkZ3MzUlFfVG9rZW46TzBDdGJhM202b08xQ0J4OWdYaGMxTjdHbm9FXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![5.参考积攒的内容知识库](/home/admin/.claude/skill-repo/research-flow/docs/images/5.参考积攒的内容知识库.png)
 
 ### 6、风格重写
 
@@ -231,7 +231,7 @@ skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
 可能没人喜欢看AI生成的内容，人味儿才是稀缺品
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=ODZkMjcyYjg2MTE5ZTc3NzhkNTI0ZWNkNjc5YWFhZWFfZm1YYm9Gbnl6SlVlY0phcXBCWjFxcFU3M00xYzU3OXdfVG9rZW46RDhwY2JHa0hOb0lkcmF4VHRkYmMwV1lrbmFiXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![6.风格重写](/home/admin/.claude/skill-repo/research-flow/docs/images/6.风格重写.png)
 
 这里我们选论文专业解读风格
 
@@ -241,7 +241,7 @@ skill会根据任务情况拟几个问题问你，你们一起理清楚思路
 
 **因为内容知识库的存在，你会越用越顺手，越用越懂你。**
 
-![img](https://aipowerlab.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDczMTIwMTQ5YWI2YzVmNzM5NmQxMzEwZWY4NTcxM2VfWHpMU1lnWFJQU1JLVWVwWUx4cFV3blJhekpUaGd4eDlfVG9rZW46TFJQTmJvTWJGb0dqaXd4cEx3V2NuVEZwbldjXzE3ODUyOTE1OTc6MTc4NTI5NTE5N19WNA&add_watermark=true&scene_type=CCM)
+![7.自动拆分更新你的内容知识库](/home/admin/.claude/skill-repo/research-flow/docs/images/7.自动拆分更新你的内容知识库.png)
 
 
 
